@@ -29,7 +29,7 @@ stages:
     - bash: echo $(PipeLineLevelVariable) DevDeployJob
 - stage: QADeploy
   variables:
-    environment: Dev
+    environment: QA
   dependsOn: Build
   jobs:
   - job: QADeploy
